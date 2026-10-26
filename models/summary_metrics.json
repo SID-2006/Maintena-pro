@@ -1,0 +1,243 @@
+{
+  "reg_metrics": {
+    "MAE": 0.5901901765641614,
+    "MSE": 0.5200486645546846,
+    "RMSE": 0.721143997100915,
+    "R2": 0.7581325805956696,
+    "coefficients": {
+      "Air temperature [K]": 0.6536183761486508,
+      "Rotational speed [rpm]": -0.00010124045990208583,
+      "Torque [Nm]": -0.002494591433436487,
+      "Tool wear [min]": -0.00013895658014312443
+    },
+    "intercept": 114.18561168441491
+  },
+  "classification_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8313333333333334,
+      "Precision": 0.1431095406360424,
+      "Recall": 0.7941176470588235,
+      "F1 Score": 0.24251497005988024,
+      "Confusion Matrix": [
+        [
+          2413,
+          485
+        ],
+        [
+          21,
+          81
+        ]
+      ]
+    },
+    {
+      "Model": "K-Nearest Neighbors (k=5)",
+      "Accuracy": 0.9716666666666667,
+      "Precision": 0.7073170731707317,
+      "Recall": 0.28431372549019607,
+      "F1 Score": 0.40559440559440557,
+      "Confusion Matrix": [
+        [
+          2886,
+          12
+        ],
+        [
+          73,
+          29
+        ]
+      ]
+    },
+    {
+      "Model": "Gaussian Naive Bayes",
+      "Accuracy": 0.957,
+      "Precision": 0.2711864406779661,
+      "Recall": 0.1568627450980392,
+      "F1 Score": 0.19875776397515527,
+      "Confusion Matrix": [
+        [
+          2855,
+          43
+        ],
+        [
+          86,
+          16
+        ]
+      ]
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.974,
+      "Precision": 0.6304347826086957,
+      "Recall": 0.5686274509803921,
+      "F1 Score": 0.5979381443298969,
+      "Confusion Matrix": [
+        [
+          2864,
+          34
+        ],
+        [
+          44,
+          58
+        ]
+      ]
+    },
+    {
+      "Model": "Bagging Classifier",
+      "Accuracy": 0.982,
+      "Precision": 0.8636363636363636,
+      "Recall": 0.5588235294117647,
+      "F1 Score": 0.6785714285714286,
+      "Confusion Matrix": [
+        [
+          2889,
+          9
+        ],
+        [
+          45,
+          57
+        ]
+      ]
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9773333333333334,
+      "Precision": 0.6931818181818182,
+      "Recall": 0.5980392156862745,
+      "F1 Score": 0.6421052631578947,
+      "Confusion Matrix": [
+        [
+          2871,
+          27
+        ],
+        [
+          41,
+          61
+        ]
+      ]
+    },
+    {
+      "Model": "Tuned Random Forest",
+      "Best Parameters": {
+        "max_depth": null,
+        "min_samples_split": 5,
+        "n_estimators": 150
+      },
+      "Accuracy": 0.974,
+      "Precision": 0.603448275862069,
+      "Recall": 0.6862745098039216,
+      "F1 Score": 0.6422018348623854,
+      "Confusion Matrix": [
+        [
+          2852,
+          46
+        ],
+        [
+          32,
+          70
+        ]
+      ]
+    }
+  ],
+  "feature_importances": [
+    {
+      "Feature": "Rotational speed [rpm]",
+      "Importance": 0.31038250060889755
+    },
+    {
+      "Feature": "Torque [Nm]",
+      "Importance": 0.29680569177641636
+    },
+    {
+      "Feature": "Tool wear [min]",
+      "Importance": 0.2048734264382508
+    },
+    {
+      "Feature": "Air temperature [K]",
+      "Importance": 0.09890258457757072
+    },
+    {
+      "Feature": "Process temperature [K]",
+      "Importance": 0.06907613543346089
+    },
+    {
+      "Feature": "Type_L",
+      "Importance": 0.009214802151944463
+    },
+    {
+      "Feature": "Type_M",
+      "Importance": 0.006587510216272516
+    },
+    {
+      "Feature": "Type_H",
+      "Importance": 0.004157348797186792
+    }
+  ],
+  "cv_results": {
+    "kfold_f1_scores": [
+      0.6304347826086957,
+      0.6075949367088608,
+      0.6896551724137931,
+      0.6666666666666666,
+      0.7142857142857143
+    ],
+    "kfold_mean_f1": 0.6617274545367462,
+    "kfold_std_f1": 0.038668552372456914,
+    "stratified_f1_scores": [
+      0.6052631578947368,
+      0.5858585858585859,
+      0.6881720430107527,
+      0.6233766233766234,
+      0.6451612903225806
+    ],
+    "stratified_mean_f1": 0.6295663400926559
+  },
+  "clustering_metrics": {
+    "silhouette_kmeans_k3": 0.262210380484853,
+    "silhouette_gmm_k3": 0.2536048282645372,
+    "cluster_means": {
+      "Air temperature [K]": {
+        "0": 301.72,
+        "1": 298.26,
+        "2": 300.12
+      },
+      "Process temperature [K]": {
+        "0": 311.25,
+        "1": 308.74,
+        "2": 310.1
+      },
+      "Rotational speed [rpm]": {
+        "0": 1469.81,
+        "1": 1474.14,
+        "2": 1797.26
+      },
+      "Torque [Nm]": {
+        "0": 43.64,
+        "1": 43.26,
+        "2": 26.57
+      },
+      "Tool wear [min]": {
+        "0": 110.36,
+        "1": 104.62,
+        "2": 109.85
+      }
+    },
+    "cluster_sizes": [
+      3930,
+      4017,
+      2053
+    ]
+  },
+  "dataset_stats": {
+    "total_records": 10000,
+    "failure_count": 339,
+    "normal_count": 9661,
+    "failure_rate": 0.0339,
+    "failure_types": {
+      "TWF (Tool Wear Failure)": 46,
+      "HDF (Heat Dissipation Failure)": 115,
+      "PWF (Power Failure)": 95,
+      "OSF (Overstrain Failure)": 98,
+      "RNF (Random Failure)": 19
+    }
+  }
+}
