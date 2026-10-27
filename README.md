@@ -7,7 +7,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-5.18+-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
 
 <p align="center">
   <b>Real-time equipment failure prediction, physics-informed condition monitoring, and telemetry diagnostics powered by Machine Learning.</b>
@@ -230,9 +230,6 @@ maintena-pro/
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and build upon this repository for your academic or commercial projects.
 
 ---
 
